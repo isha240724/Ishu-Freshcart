@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ishu FreshCart — Premium online grocery shopping. Browse fresh produce, dairy, bakery items, and more. Fast delivery to your door.">
+  <title>Ishu FreshCart — Fresh Groceries Delivered</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- ============ NAVBAR ============ -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar-inner">
+      <a href="#" class="logo" id="logo-link">
+        <span class="logo-icon">🛒</span>
+        <span class="logo-text">Ishu Fresh<span class="logo-accent">Cart</span></span>
+      </a>
+      <div class="search-bar" id="search-bar">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="search-input" placeholder="Search groceries..." autocomplete="off">
+        <button class="search-clear hidden" id="search-clear">✕</button>
+      </div>
+      <div class="navbar-actions">
+        <button class="btn-orders" id="btn-orders" title="My Orders">
+          <span>📦</span>
+          <span class="btn-orders-text">Orders</span>
+        </button>
+        <button class="cart-btn" id="cart-btn" title="View Cart">
+          <span class="cart-icon">🛍️</span>
+          <span class="cart-badge hidden" id="cart-badge">0</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-badge">🌿 Fresh & Organic</div>
+      <h1 class="hero-title">Groceries delivered<br><span class="hero-gradient">in minutes</span></h1>
+      <p class="hero-subtitle">Premium quality fruits, vegetables, dairy, and more — handpicked and delivered to your door.</p>
+      <button class="hero-cta" id="hero-cta">Start Shopping</button>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-float hero-float-1">🍎</div>
+      <div class="hero-float hero-float-2">🥑</div>
+      <div class="hero-float hero-float-3">🍞</div>
+      <div class="hero-float hero-float-4">🥛</div>
+      <div class="hero-float hero-float-5">🍓</div>
+      <div class="hero-float hero-float-6">🧀</div>
+    </div>
+  </section>
+
+  <!-- ============ PRODUCTS SECTION ============ -->
+  <section class="products-section" id="products-section">
+    <div class="section-header">
+      <h2 class="section-title">Shop by Category</h2>
+      <p class="section-subtitle">Fresh picks, delivered daily</p>
+    </div>
+
+    <!-- Category Tabs -->
+    <div class="category-tabs" id="category-tabs">
+      <button class="cat-tab active" data-category="All">
+        <span class="cat-emoji">🏪</span> All
+      </button>
+    </div>
+
+    <!-- Product Grid -->
+    <div class="product-grid" id="product-grid">
+      <!-- Products rendered by JS -->
+    </div>
+
+    <div class="empty-state hidden" id="empty-products">
+      <span class="empty-icon">🔍</span>
+      <h3>No products found</h3>
+      <p>Try a different search or category</p>
+    </div>
+  </section>
+
+  <!-- ============ CART DRAWER ============ -->
+  <div class="cart-overlay hidden" id="cart-overlay"></div>
+  <aside class="cart-drawer hidden" id="cart-drawer">
+    <div class="cart-header">
+      <h2>Your Cart <span class="cart-header-badge" id="cart-header-badge">0</span></h2>
+      <button class="cart-close" id="cart-close">✕</button>
+    </div>
+    <div class="cart-body" id="cart-body">
+      <!-- Cart items rendered by JS -->
+    </div>
+    <div class="cart-empty hidden" id="cart-empty">
+      <span class="cart-empty-icon">🛒</span>
+      <h3>Your cart is empty</h3>
+      <p>Add some delicious items!</p>
+    </div>
+    <div class="cart-footer" id="cart-footer">
+      <div class="cart-total">
+        <span>Total</span>
+        <span class="cart-total-price" id="cart-total-price">$0.00</span>
+      </div>
+      <button class="btn-checkout" id="btn-checkout">Proceed to Checkout</button>
+      <button class="btn-clear-cart" id="btn-clear-cart">Clear Cart</button>
+    </div>
+  </aside>
+
+  <!-- ============ CHECKOUT MODAL ============ -->
+  <div class="modal-overlay hidden" id="checkout-overlay">
+    <div class="modal checkout-modal" id="checkout-modal">
+      <button class="modal-close" id="checkout-close">✕</button>
+      <h2 class="modal-title">Checkout</h2>
+
+      <div class="checkout-summary" id="checkout-summary">
+        <!-- Summary items rendered by JS -->
+      </div>
+
+      <form class="checkout-form" id="checkout-form">
+        <div class="form-group">
+          <label for="customer-name">Full Name</label>
+          <input type="text" id="customer-name" placeholder="John Doe" required>
+        </div>
+        <div class="form-group">
+          <label for="customer-address">Delivery Address</label>
+          <textarea id="customer-address" rows="2" placeholder="123 Main St, City, State" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="customer-phone">Phone Number</label>
+          <input type="tel" id="customer-phone" placeholder="+1 (555) 123-4567" required>
+        </div>
+        <div class="checkout-total">
+          <span>Order Total</span>
+          <span class="checkout-total-price" id="checkout-total-price">$0.00</span>
+        </div>
+        <button type="submit" class="btn-place-order" id="btn-place-order">
+          <span class="btn-text">Place Order</span>
+          <span class="btn-loader hidden" id="order-loader"></span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ============ ORDER CONFIRMATION MODAL ============ -->
+  <div class="modal-overlay hidden" id="confirm-overlay">
+    <div class="modal confirm-modal" id="confirm-modal">
+      <div class="confirm-icon">✅</div>
+      <h2 class="confirm-title">Order Placed!</h2>
+      <p class="confirm-id" id="confirm-order-id"></p>
+      <div class="confirm-details" id="confirm-details">
+        <!-- Rendered by JS -->
+      </div>
+      <button class="btn-continue" id="btn-continue">Continue Shopping</button>
+    </div>
+  </div>
+
+  <!-- ============ ORDERS MODAL ============ -->
+  <div class="modal-overlay hidden" id="orders-overlay">
+    <div class="modal orders-modal" id="orders-modal">
+      <button class="modal-close" id="orders-close">✕</button>
+      <h2 class="modal-title">📦 My Orders</h2>
+      <div class="orders-list" id="orders-list">
+        <!-- Rendered by JS -->
+      </div>
+      <div class="orders-empty hidden" id="orders-empty">
+        <span class="empty-icon">📭</span>
+        <h3>No orders yet</h3>
+        <p>Place your first order!</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ TOAST CONTAINER ============ -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- ============ SCRIPTS ============ -->
+  <script src="js/api.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

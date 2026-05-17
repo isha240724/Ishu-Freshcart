@@ -1,0 +1,242 @@
+[
+  {
+    "id": "fruit-001",
+    "name": "Organic Bananas",
+    "category": "Fruits",
+    "price": 1.29,
+    "unit": "bunch",
+    "emoji": "🍌",
+    "description": "Sweet, ripe organic bananas. Perfect for smoothies and snacks.",
+    "inStock": true
+  },
+  {
+    "id": "fruit-002",
+    "name": "Fresh Strawberries",
+    "category": "Fruits",
+    "price": 4.99,
+    "unit": "lb",
+    "emoji": "🍓",
+    "description": "Juicy, red strawberries picked at peak ripeness.",
+    "inStock": true
+  },
+  {
+    "id": "fruit-003",
+    "name": "Gala Apples",
+    "category": "Fruits",
+    "price": 3.49,
+    "unit": "3 lb bag",
+    "emoji": "🍎",
+    "description": "Crisp and sweet Gala apples, great for eating fresh.",
+    "inStock": true
+  },
+  {
+    "id": "fruit-004",
+    "name": "Avocados",
+    "category": "Fruits",
+    "price": 1.99,
+    "unit": "each",
+    "emoji": "🥑",
+    "description": "Creamy Hass avocados, perfect for guacamole and toast.",
+    "inStock": true
+  },
+  {
+    "id": "veg-001",
+    "name": "Baby Spinach",
+    "category": "Vegetables",
+    "price": 3.99,
+    "unit": "5 oz",
+    "emoji": "🥬",
+    "description": "Tender baby spinach leaves, pre-washed and ready to eat.",
+    "inStock": true
+  },
+  {
+    "id": "veg-002",
+    "name": "Cherry Tomatoes",
+    "category": "Vegetables",
+    "price": 3.49,
+    "unit": "pint",
+    "emoji": "🍅",
+    "description": "Sweet cherry tomatoes, perfect for salads and snacking.",
+    "inStock": true
+  },
+  {
+    "id": "veg-003",
+    "name": "Fresh Broccoli",
+    "category": "Vegetables",
+    "price": 2.49,
+    "unit": "bunch",
+    "emoji": "🥦",
+    "description": "Crisp, fresh broccoli crowns packed with nutrients.",
+    "inStock": true
+  },
+  {
+    "id": "veg-004",
+    "name": "Sweet Bell Peppers",
+    "category": "Vegetables",
+    "price": 4.99,
+    "unit": "3 pack",
+    "emoji": "🫑",
+    "description": "Colorful mix of red, yellow, and green bell peppers.",
+    "inStock": true
+  },
+  {
+    "id": "dairy-001",
+    "name": "Whole Milk",
+    "category": "Dairy",
+    "price": 4.29,
+    "unit": "gallon",
+    "emoji": "🥛",
+    "description": "Fresh, creamy whole milk from local farms.",
+    "inStock": true
+  },
+  {
+    "id": "dairy-002",
+    "name": "Greek Yogurt",
+    "category": "Dairy",
+    "price": 5.99,
+    "unit": "32 oz",
+    "emoji": "🫙",
+    "description": "Thick, protein-rich Greek yogurt. Plain and versatile.",
+    "inStock": true
+  },
+  {
+    "id": "dairy-003",
+    "name": "Cheddar Cheese",
+    "category": "Dairy",
+    "price": 6.49,
+    "unit": "8 oz block",
+    "emoji": "🧀",
+    "description": "Sharp aged cheddar cheese, perfect for sandwiches and cooking.",
+    "inStock": true
+  },
+  {
+    "id": "dairy-004",
+    "name": "Farm Fresh Eggs",
+    "category": "Dairy",
+    "price": 5.49,
+    "unit": "dozen",
+    "emoji": "🥚",
+    "description": "Free-range eggs from pasture-raised hens.",
+    "inStock": true
+  },
+  {
+    "id": "bakery-001",
+    "name": "Sourdough Bread",
+    "category": "Bakery",
+    "price": 5.99,
+    "unit": "loaf",
+    "emoji": "🍞",
+    "description": "Artisan sourdough bread with a perfect crusty exterior.",
+    "inStock": true
+  },
+  {
+    "id": "bakery-002",
+    "name": "Croissants",
+    "category": "Bakery",
+    "price": 6.99,
+    "unit": "4 pack",
+    "emoji": "🥐",
+    "description": "Buttery, flaky croissants baked fresh daily.",
+    "inStock": true
+  },
+  {
+    "id": "bakery-003",
+    "name": "Blueberry Muffins",
+    "category": "Bakery",
+    "price": 5.49,
+    "unit": "4 pack",
+    "emoji": "🧁",
+    "description": "Moist blueberry muffins with a golden crumb topping.",
+    "inStock": true
+  },
+  {
+    "id": "bakery-004",
+    "name": "Everything Bagels",
+    "category": "Bakery",
+    "price": 4.99,
+    "unit": "6 pack",
+    "emoji": "🥯",
+    "description": "Classic everything bagels with sesame, poppy, and garlic.",
+    "inStock": true
+  },
+  {
+    "id": "bev-001",
+    "name": "Orange Juice",
+    "category": "Beverages",
+    "price": 5.99,
+    "unit": "52 oz",
+    "emoji": "🍊",
+    "description": "100% pure squeezed orange juice, no pulp.",
+    "inStock": true
+  },
+  {
+    "id": "bev-002",
+    "name": "Cold Brew Coffee",
+    "category": "Beverages",
+    "price": 8.99,
+    "unit": "32 oz",
+    "emoji": "☕",
+    "description": "Smooth, rich cold brew coffee concentrate.",
+    "inStock": true
+  },
+  {
+    "id": "bev-003",
+    "name": "Sparkling Water",
+    "category": "Beverages",
+    "price": 4.49,
+    "unit": "8 pack",
+    "emoji": "💧",
+    "description": "Naturally carbonated sparkling mineral water.",
+    "inStock": true
+  },
+  {
+    "id": "bev-004",
+    "name": "Green Smoothie",
+    "category": "Beverages",
+    "price": 6.99,
+    "unit": "16 oz",
+    "emoji": "🥤",
+    "description": "Fresh blend of kale, banana, mango, and coconut water.",
+    "inStock": true
+  },
+  {
+    "id": "snack-001",
+    "name": "Mixed Nuts",
+    "category": "Snacks",
+    "price": 9.99,
+    "unit": "16 oz",
+    "emoji": "🥜",
+    "description": "Premium roasted mixed nuts — almonds, cashews, and pecans.",
+    "inStock": true
+  },
+  {
+    "id": "snack-002",
+    "name": "Dark Chocolate Bar",
+    "category": "Snacks",
+    "price": 4.49,
+    "unit": "3.5 oz",
+    "emoji": "🍫",
+    "description": "72% cacao dark chocolate with hints of vanilla.",
+    "inStock": true
+  },
+  {
+    "id": "snack-003",
+    "name": "Tortilla Chips",
+    "category": "Snacks",
+    "price": 3.99,
+    "unit": "13 oz",
+    "emoji": "🌮",
+    "description": "Crunchy stone-ground corn tortilla chips, lightly salted.",
+    "inStock": true
+  },
+  {
+    "id": "snack-004",
+    "name": "Trail Mix",
+    "category": "Snacks",
+    "price": 7.49,
+    "unit": "12 oz",
+    "emoji": "🫘",
+    "description": "Energizing blend of nuts, dried fruits, and seeds.",
+    "inStock": true
+  }
+]
